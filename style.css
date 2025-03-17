@@ -1,0 +1,166 @@
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* تغيير الخلفية إلى الأبيض */
+    color: black; /* تغيير لون النص إلى الأسود */
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+}
+
+/* شريط التنقل */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: orange;
+    font-size: 24px;
+}
+
+.connect-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* قسم الترحيب */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5; /* خلفية رمادية فاتحة */
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.highlight {
+    color: red;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* صورة الشخصية */
+.hero-image img {
+    width: 300px;
+    height: auto;
+}
+
+/* قسم الأخبار */
+.news-section {
+    padding: 50px 20px;
+    background-color: white; /* خلفية بيضاء */
+}
+
+.news-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-card h3 {
+    color: rgb(255, 38, 0);
+    margin-top: 10px;
+}
+
+.news-card p {
+    font-size: 14px;
+}
+
+.news-card a {
+    display: block;
+    color: rgb(4, 0, 255);
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* قسم الفيديوهات */
+.videos-section {
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* لون رمادي فاتح */
+}
+
+.videos-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+/* قسم الديسكورد */
+.discord-section {
+    padding: 50px 20px;
+    background-color: white; /* خلفية بيضاء */
+}
+
+.discord-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* الفوتر */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
