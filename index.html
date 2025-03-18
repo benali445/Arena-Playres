@@ -27,7 +27,7 @@
     </section>
 
     <!-- قسم الفيديوهات -->
-    <section class="videos-section" id="news">
+    <section class="videos-section">
         <h2>أحدث الفيديوهات</h2>
         <div class="videos-list">
             <div class="video-card">
@@ -52,27 +52,5 @@
         <p>&copy; 2025 Arena Players. جميع الحقوق محفوظة.</p>
     </footer>
 
-    <script>
-        // وظيفة زر "انضم الآن"
-        document.querySelector('.connect-button').addEventListener('click', function() {
-            alert('تم الضغط على زر انضم الآن!');
-            // يمكنك توجيه المستخدم إلى صفحة التسجيل مثلًا:
-            // window.location.href = 'signup.html';
-        });
-
-        // وظيفة زر "استكشف الآن"
-        document.querySelector('.cta-button').addEventListener('click', function() {
-            document.querySelector('#news').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-
-        // وظيفة زر "انضم إلينا على Discord"
-        document.querySelector('.discord-button').addEventListener('click', function() {
-            window.location.href = 'https://discord.com';
-        });
-    </script>
-
 </body>
 </html>
-
