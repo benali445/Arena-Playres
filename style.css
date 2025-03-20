@@ -23,66 +23,43 @@ body {
     font-weight: bold;
 }
 
-/* 🔎 تحسين شريط البحث */
+/* 🔎 تنسيق شريط البحث */
 .search-box {
     display: flex;
     align-items: center;
     background: white;
     padding: 5px;
-    border-radius: 25px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.search-box:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .search-box input {
     border: none;
     outline: none;
-    padding: 10px 15px;
-    border-radius: 25px;
-    font-size: 16px;
-    width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 180px;
     transition: width 0.3s ease-in-out;
 }
 
 .search-box input:focus {
-    width: 250px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 220px;
 }
 
 .search-box button {
     background: #ff6600;
     color: white;
     border: none;
-    padding: 10px 18px;
-    border-radius: 25px;
+    padding: 8px 15px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 8px;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
 }
 
-/* أيقونة البحث */
-.search-box button::before {
-    content: "🔍";
-    font-size: 18px;
-}
-
-/* تأثير عند التفاعل */
 .search-box button:hover {
     background: #e65c00;
-    transform: scale(1.05);
-}
-
-.search-box button:active {
-    transform: scale(0.95);
 }
 
 /* 🔵 زر "انضم الآن" */
