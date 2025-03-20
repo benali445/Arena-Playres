@@ -1,4 +1,4 @@
-/* تنسيق عام */
+/* 🌟 تنسيق عام */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* شريط التنقل */
+/* 🎯 شريط التنقل */
 .navbar {
     background: #333;
     color: white;
@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -22,7 +23,46 @@ body {
     font-weight: bold;
 }
 
-/* زر "انضم الآن" */
+/* 🔎 تنسيق شريط البحث */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 180px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-box input:focus {
+    width: 220px;
+}
+
+.search-box button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #e65c00;
+}
+
+/* 🔵 زر "انضم الآن" */
 .connect-button {
     display: inline-block;
     background: #5865F2;
@@ -41,7 +81,7 @@ body {
     transform: scale(1.05);
 }
 
-/* قسم الترحيب */
+/* 🏆 قسم الترحيب */
 .hero-section {
     display: flex;
     align-items: center;
@@ -66,7 +106,7 @@ body {
     border-radius: 10px;
 }
 
-/* زر استكشاف */
+/* 🔥 زر استكشاف */
 .cta-button {
     background: #ff6600;
     color: white;
@@ -84,7 +124,7 @@ body {
     background: #e65c00;
 }
 
-/* قسم الأخبار */
+/* 📰 قسم الأخبار */
 .news-section {
     padding: 50px 20px;
 }
@@ -100,7 +140,7 @@ body {
     background: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     transition: transform 0.3s, opacity 0.5s;
 }
@@ -114,7 +154,18 @@ body {
     margin: 10px 0;
 }
 
-/* قسم الفيديوهات */
+.news-card a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.news-card a:hover {
+    color: #e65c00;
+}
+
+/* 🎥 قسم الفيديوهات */
 .videos-section {
     padding: 50px 20px;
 }
@@ -136,7 +187,7 @@ body {
     border-radius: 5px;
 }
 
-/* قسم الديسكورد */
+/* 💬 قسم الديسكورد */
 .discord-section {
     padding: 40px;
     background: #5865F2;
@@ -160,19 +211,60 @@ body {
     color: white;
 }
 
-/* الفوتر */
+/* 📌 صندوق تفاصيل الأخبار */
+.news-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 500px;
+    z-index: 1000;
+    text-align: left;
+}
+
+.news-details .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 📌 تفعيل صندوق التفاصيل */
+.news-details.active {
+    display: block;
+}
+
+/* ⚫ الفوتر */
 footer {
     background: #333;
     color: white;
     padding: 15px;
 }
 
-/* تحسين التوافق مع الهواتف */
+/* 📱 تحسين التوافق مع الهواتف */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         text-align: center;
         padding: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
     }
 
     .hero-section {
