@@ -1,4 +1,4 @@
-/* تنسيق عام */
+/* 🌍 إعدادات عامة */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* شريط التنقل */
+/* 🚀 شريط التنقل */
 .navbar {
     background: #333;
     color: white;
@@ -37,7 +37,48 @@ body {
     background: #4752C4;
 }
 
-/* قسم الأخبار */
+/* ✨ قسم الترحيب */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #222;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+}
+
+.hero-image img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* 🎯 زر استكشاف */
+.cta-button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #e65c00;
+}
+
+/* 📰 قسم الأخبار */
 .news-section {
     padding: 50px 20px;
 }
@@ -56,7 +97,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 300px;
     transition: transform 0.3s, opacity 0.5s;
-    text-align: left;
 }
 
 .news-card img {
@@ -68,41 +108,96 @@ body {
     margin: 10px 0;
 }
 
-/* زر اقرأ المزيد */
-.read-more-button {
-    background: #ff6600;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-    transition: background 0.3s;
-    margin-top: 10px;
+.news-card a {
     display: block;
-}
-
-.read-more-button:hover {
-    background: #e65c00;
-}
-
-/* المحتوى المخفي */
-.hidden-content {
     margin-top: 10px;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    display: none;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* الفوتر */
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+/* 🔎 صندوق تفاصيل الأخبار */
+.news-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    z-index: 1000;
+}
+
+.news-content {
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+/* 🎥 قسم الفيديوهات */
+.videos-section {
+    padding: 50px 20px;
+}
+
+.videos-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 320px;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+}
+
+/* 🎮 قسم الديسكورد */
+.discord-section {
+    padding: 40px;
+    background: #5865F2;
+    color: white;
+}
+
+.discord-button {
+    background: white;
+    color: #5865F2;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* 🏁 الفوتر */
 footer {
     background: #333;
     color: white;
     padding: 15px;
 }
 
-/* تحسين التوافق مع الهواتف */
+/* 📱 تحسين التوافق مع الهواتف */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -110,16 +205,33 @@ footer {
         padding: 10px;
     }
 
-    .news-list {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+
+    .news-list,
+    .videos-list {
         flex-direction: column;
         align-items: center;
     }
 
-    .news-card {
+    .news-card,
+    .video-card {
         width: 90%;
     }
 
-    .connect-button, .read-more-button {
+    .connect-button, .cta-button, .discord-button {
         width: 100%;
         padding: 15px;
     }
